@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee7d7; /* Bege claro como fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #179c86, #a1a1a1); /* Verde-azulado para laranja */
+    color: #ffffff;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 15px rgba(90, 124, 118, 0.3); /* Sombra com verde-escuro */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #eee7d7; /* Bege claro no hover */
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #a3bcb8; /* Verde-azulado nos títulos */
+    font-weight: 700;
+}
+
+/* Products Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(90, 124, 118, 0.1); /* Sombra com verde-escuro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(90, 124, 118, 0.2); /* Sombra mais forte com verde-escuro */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #d74222; /* Laranja nos títulos dos produtos */
+}
+
+.product-card p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    background: #a3bcb8; /* Verde-azulado nos botões */
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+    background: #5a7c76; /* Verde-escuro no hover */
+}
+
+/* Cart Section */
+#cart-items {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(90, 124, 118, 0.1); /* Sombra com verde-escuro */
+    margin-bottom: 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item span {
+    font-size: 1.1rem;
+}
+
+#cart-total {
+    font-weight: 600;
+    color: #d74222; /* Laranja no total */
+}
+
+#checkout-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background: #a3bcb8; /* Verde-azulado no botão */
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background: #5a7c76; /* Verde-escuro no hover */
+}
+
+/* Checkout Section */
+.checkout-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(90, 124, 118, 0.1); /* Sombra com verde-escuro */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.checkout-form button {
+    width: 100%;
+    background: #a3bcb8; /* Verde-azulado no botão */
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.checkout-form button:hover {
+    background: #5a7c76; /* Verde-escuro no hover */
+}
+
+.qr-code-display {
+    margin-top: 2rem;
+    text-align: center;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(90, 124, 118, 0.1); /* Sombra com verde-escuro */
+}
+
+.qr-code-display p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.qr-code-display #qrcode-img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* About and Contact Sections */
+#about p, #contact p, #contact ul {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+
+#contact ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#contact ul li {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #5a7c76; /* Verde-escuro no footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Adicionais */
+.payment-message {
+    margin-top: 1rem;
+    text-align: center;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#pix-key-field, #credit-card-fields {
+    margin-top: 1rem;
+}
+
+#payment-method, #installments {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#installment-preview {
+    text-align: center;
+    color: #d74222; /* Laranja na prévia das parcelas */
+    font-size: 1.1rem;
+}
