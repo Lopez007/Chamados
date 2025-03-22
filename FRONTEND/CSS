@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #179c86, #a1a1a1); /* Verde-azulado para laranja */
+    background: linear-gradient(135deg, #3d0099, #a1a1a1); /* Verde-azulado para laranja */
     color: #ffffff;
     padding: 1.5rem 0;
     box-shadow: 0 2px 15px rgba(90, 124, 118, 0.3); /* Sombra com verde-escuro */
